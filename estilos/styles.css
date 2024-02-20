@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+}
+
+.item {
+    background-color: #1E96FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
